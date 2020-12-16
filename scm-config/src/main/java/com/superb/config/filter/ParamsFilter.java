@@ -14,7 +14,7 @@ public class ParamsFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         long start = System.currentTimeMillis();
         filterChain.doFilter(servletRequest,servletResponse);
-        System.out.println("Execute cost="+(System.currentTimeMillis()-start));
+        System.out.println("请求耗时================="+(System.currentTimeMillis()-start));
     }
 
     @Override

@@ -17,7 +17,7 @@ public class ParamsInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request,
                              HttpServletResponse response, Object handler) throws Exception {
-        System.out.println("LoginIntercepter------->preHandle");
+        System.out.println("拦截器开始---------------->preHandle");
 
 //        String token = request.getParameter("access_token");
 //
@@ -34,7 +34,7 @@ public class ParamsInterceptor implements HandlerInterceptor {
                            HttpServletResponse response, Object handler,
                            ModelAndView modelAndView) throws Exception {
 
-        System.out.println("LoginIntercepter------->postHandle");
+        System.out.println("拦截器处理---------------->postHandle");
 
         HandlerInterceptor.super.postHandle(request, response, handler, modelAndView);
     }
@@ -46,7 +46,7 @@ public class ParamsInterceptor implements HandlerInterceptor {
     public void afterCompletion(HttpServletRequest request,
                                 HttpServletResponse response, Object handler, Exception ex)
             throws Exception {
-        System.out.println("LoginIntercepter------->afterCompletion");
+        System.out.println("拦截器结束------------------->afterCompletion");
 
         HandlerInterceptor.super.afterCompletion(request, response, handler, ex);
     }

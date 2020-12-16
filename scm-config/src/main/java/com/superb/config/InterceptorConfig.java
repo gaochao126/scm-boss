@@ -11,7 +11,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
 
-        registry.addInterceptor(new ParamsInterceptor()).addPathPatterns("/*");
+        registry.addInterceptor(new ParamsInterceptor()).addPathPatterns("/baseController/*");
 
         //.excludePathPatterns("/api2/xxx/**"); //拦截全部 /*/*/**
 
