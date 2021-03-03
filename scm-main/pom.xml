@@ -9,6 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <modules>
+        <module>../scm-domain</module>
+        <module>../scm-config</module>
+        <module>../scm-service</module>
+        <module>../scm-order</module>
+        <module>../scm-dao</module>
+    </modules>
     <artifactId>scm-main</artifactId>
     <dependencies>
         <dependency>
@@ -39,6 +46,29 @@
             <artifactId>mybatis-spring</artifactId>
             <version>2.0.4</version>
             <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.superb</groupId>
+            <artifactId>scm-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.superb</groupId>
+            <artifactId>scm-domain</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.superb</groupId>
+            <artifactId>scm-config</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
