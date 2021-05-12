@@ -1,4 +1,4 @@
-package com.superb.anno;
+package core.annota;
 
 public class Apple {
 

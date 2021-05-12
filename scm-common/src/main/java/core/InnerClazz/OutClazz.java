@@ -1,4 +1,4 @@
-package com.superb.InnerClazz;
+package core.InnerClazz;
 
 /**
  * 静态内部类，静态static关键词修饰

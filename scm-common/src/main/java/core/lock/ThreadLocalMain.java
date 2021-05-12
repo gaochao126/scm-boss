@@ -1,4 +1,4 @@
-package com.superb.lock;
+package core.lock;
 
 public class ThreadLocalMain {
 

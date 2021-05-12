@@ -1,7 +1,6 @@
-package com.superb.lock;
+package core.lock;
 
 import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.TimeUnit;
 
 public class CountDownLatchMain {
 

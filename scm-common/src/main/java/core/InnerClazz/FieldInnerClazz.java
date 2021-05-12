@@ -1,4 +1,4 @@
-package com.superb.InnerClazz;
+package core.InnerClazz;
 
 /**
  * 成员内部类

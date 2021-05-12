@@ -1,4 +1,4 @@
-package com.superb.thread;
+package core.thread;
 
 import cn.hutool.core.thread.ThreadUtil;
 import com.alibaba.ttl.threadpool.TtlExecutors;

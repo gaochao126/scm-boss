@@ -1,4 +1,4 @@
-package com.superb.InnerClazz;
+package core.InnerClazz;
 
         import com.alibaba.fastjson.JSONObject;
 

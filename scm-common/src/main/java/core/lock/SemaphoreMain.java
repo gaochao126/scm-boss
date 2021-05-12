@@ -1,4 +1,4 @@
-package com.superb.lock;
+package core.lock;
 
 import java.util.Random;
 import java.util.concurrent.Semaphore;

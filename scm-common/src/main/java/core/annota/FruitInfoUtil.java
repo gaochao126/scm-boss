@@ -1,4 +1,4 @@
-package com.superb.anno;
+package core.annota;
 
 import java.lang.reflect.Field;
 
