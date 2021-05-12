@@ -1,3 +1,4 @@
+import com.alibaba.fastjson.JSONObject;
 import com.superb.StartApplication;
 import com.superb.model.UserEntity;
 import com.superb.model.UserInfoEntity;
@@ -8,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
+import java.math.BigDecimal;
 import java.util.List;
 
 @SpringBootTest(classes = StartApplication.class)
@@ -31,4 +33,26 @@ public class UserTest {
 
         System.out.println(userInfoEntities.toString());
     }
+
+
+    @Test
+    public void json(){
+        Demo d = new Demo();
+        d.setAmt(new BigDecimal("20"));
+        d.setName("哈哈");
+        d.setTotalAmt("300");
+
+        System.out.println(JSONObject.toJSON(d));
+    }
+    @Test
+    public void strTojson(){
+        String s = "{\"totalAmt\":\"300\",\"name\":\"哈哈\",\"amt\":20}";
+        Demo d = (Demo) JSONObject.parse(s);
+
+        System.out.println(d.getAmt());
+        System.out.println(d.getName());
+        System.out.println(d.getTotalAmt());
+    }
+
+
 }
