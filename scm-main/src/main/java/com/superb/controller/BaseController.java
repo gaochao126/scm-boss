@@ -1,5 +1,6 @@
 package com.superb.controller;
 
+import com.superb.controller.aspect.SysLog;
 import com.superb.model.UserEntity;
 import com.superb.user.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -19,6 +20,7 @@ public class BaseController {
     @Autowired
     UserService userService;
 
+    @SysLog(value = "登录方法测试啊。。")
     @GetMapping(value = "login")
     public String login(@RequestParam("sex") int sex) {
 
@@ -27,5 +29,10 @@ public class BaseController {
         System.out.println(userBySex.toString());
 
         return userBySex.toString();
+    }
+
+    @GetMapping(value = "print")
+    public String print(){
+        return "哈哈哈 print";
     }
 }
