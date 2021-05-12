@@ -10,6 +10,7 @@
         <module>scm-order</module>
         <module>scm-main</module>
         <module>scm-config</module>
+        <module>scm-common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
