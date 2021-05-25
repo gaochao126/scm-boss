@@ -9,4 +9,8 @@ public interface UserService {
     List<UserEntity> listUser();
 
     List<UserEntity> selectUserBySex(int sex);
+
+    void initUserToRedis();
+
+    String getUserFromRedis();
 }

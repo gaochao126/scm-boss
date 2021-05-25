@@ -2,6 +2,7 @@ server:
   port: 8080
 #数据源
 spring:
+
   security:
     basic:
       enabled: false
@@ -49,6 +50,13 @@ spring:
       # 日志用的filter:log4j
       # 防御sql注入的filter:wall
       filters: stat
+
+#=========================redis=======================
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+
 
 # ====================MybatisPlus====================
 mybatis-plus:

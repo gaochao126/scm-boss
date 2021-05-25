@@ -32,7 +32,15 @@ public class BaseController {
     }
 
     @GetMapping(value = "print")
-    public String print(){
+    public String print() {
         return "哈哈哈 print";
+    }
+
+    @GetMapping(value = "getByRedis")
+    public String getByRedis() {
+        userService.initUserToRedis();
+
+        String userFromRedis = userService.getUserFromRedis();
+        return userFromRedis;
     }
 }
