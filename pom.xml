@@ -27,7 +27,7 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <lombok_version>1.18.12</lombok_version>
+        <lombok_version>1.18.10</lombok_version>
         <baomidou_version>3.1.1</baomidou_version>
         <druid_version>1.0.29</druid_version>
         <mysql_version>8.0.20</mysql_version>
@@ -36,6 +36,7 @@
         <redis_version>1.4.1.RELEASE</redis_version>
         <spring_aspect_version>1.9.6</spring_aspect_version>
         <cglib_version>2.2.2</cglib_version>
+        <slf4j_version>1.7.25</slf4j_version>
     </properties>
 
     <dependencies>
@@ -49,15 +50,31 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.71</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.3.2.RELEASE</version>
         </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j_version}</version>
+        </dependency>
+
+        <!-- lombook -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok_version}</version>
+            <scope>provided</scope>
         </dependency>
 
         <!--mybatis-plus自动的维护了mybatis以及mybatis-spring的依赖，
@@ -82,42 +99,46 @@
             <version>${mysql_version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
-
+        <!-- fastjson-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fast_version}</version>
         </dependency>
 
+        <!-- hutool 工具包 -->
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>5.3.9</version>
         </dependency>
 
+        <!-- httpclient-->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>${httpclient_version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.3.2.RELEASE</version>
-        </dependency>
-
+        <!-- 集成zk -->
         <dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
             <version>3.4.10</version>
+
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
+        <!-- 阿里父子线程工具 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>transmittable-thread-local</artifactId>
@@ -138,16 +159,44 @@
             <version>${redis_version}</version>
         </dependency>
 
+        <!-- 集成 rabbitMq -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+        <!-- jackson -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
         </dependency>
 
+        <!-- aop -->
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
             <version>${spring_aspect_version}</version>
         </dependency>
+
+
+        <!--<dependency>-->
+        <!--<groupId> org.apache.cassandra</groupId>-->
+        <!--<artifactId>cassandra-all</artifactId>-->
+        <!--<version>0.8.1</version>-->
+
+        <!--<exclusions>-->
+        <!--<exclusion>-->
+        <!--<groupId>org.slf4j</groupId>-->
+        <!--<artifactId>slf4j-log4j12</artifactId>-->
+        <!--</exclusion>-->
+        <!--<exclusion>-->
+        <!--<groupId>log4j</groupId>-->
+        <!--<artifactId>log4j</artifactId>-->
+        <!--</exclusion>-->
+        <!--</exclusions>-->
+
+        <!--</dependency>-->
+
     </dependencies>
 
     <build>
