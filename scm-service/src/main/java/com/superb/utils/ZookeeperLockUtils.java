@@ -22,7 +22,7 @@ public class ZookeeperLockUtils {
         zkClient = new ZkClient("localhost:2181",2000);
         //连接zk
         this.lockName =ROOT_PATH.concat("/").concat(lockName);
-        //创建持久节点，该节点下后面创建临时有序节点
+        //创建持久节点，该节点下后面创建临时有序节点 1
         if (!zkClient.exists(this.lockName)) {
 //            zkClient.createPersistent(ROOT_PATH);
             zkClient.createPersistent(this.lockName);
