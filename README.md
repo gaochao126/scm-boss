@@ -17,3 +17,15 @@
         
     2.2、spring-boot整合rabbitmq
         https://www.cnblogs.com/java-spring/p/13645778.html
+        https://blog.csdn.net/qq_35387940/article/details/100514134
+        https://www.cnblogs.com/blacksmith4/p/13407456.html
+    2.3、消息积压解决
+        https://www.cnblogs.com/townsend/p/13663544.html
+    
+三、zookeeper在windows下安装
+    
+    3.1、安装地址
+        https://blog.csdn.net/qq_33316784/article/details/88563482
+    3.2、springboot集成zookeeper
+        https://blog.csdn.net/u010391342/article/details/100404588    
+    

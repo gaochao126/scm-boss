@@ -15,6 +15,7 @@
         <module>../scm-service</module>
         <module>../scm-order</module>
         <module>../scm-dao</module>
+        <module>../scm-common</module>
     </modules>
     <artifactId>scm-main</artifactId>
     <dependencies>
