@@ -146,6 +146,13 @@
             </exclusions>
         </dependency>
 
+        <!-- zk client -->
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>0.11</version>
+        </dependency>
+
         <!-- 阿里父子线程工具 -->
         <dependency>
             <groupId>com.alibaba</groupId>
