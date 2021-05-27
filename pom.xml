@@ -175,7 +175,7 @@
 
         <!-- jackson -->
         <dependency>
-            <groupId>com.fasterxml.jackson.com.superb.core</groupId>
+            <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
         </dependency>
 
