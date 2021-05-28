@@ -34,9 +34,18 @@
     4.1、安装地址
         https://blog.csdn.net/weixin_38004638/article/details/91893910
    
-    4.2、kafka文件夹下执行命令：
+    4.2、kafka启动与停止
+        https://blog.csdn.net/liuerchong/article/details/111279944
         .\bin\windows\kafka-server-start.bat .\config\server.properties
    
     4.3、springboot整合kafka
         https://www.cnblogs.com/toutou/archive/2019/10/07/11354330.html   
      
+    4.5、kafka-manager安装
+        https://blog.csdn.net/liuerchong/article/details/111279944
+        （http://localhost:9200/）
+
+五、es在windows下安装  
+    
+    5.1、安装地址
+        https://blog.csdn.net/weixin_41575259/article/details/82529580

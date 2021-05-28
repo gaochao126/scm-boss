@@ -37,6 +37,7 @@
         <spring_aspect_version>1.9.6</spring_aspect_version>
         <cglib_version>2.2.2</cglib_version>
         <slf4j_version>1.7.25</slf4j_version>
+        <elasticsearch.version>7.2.0</elasticsearch.version>
     </properties>
 
     <dependencies>
@@ -186,6 +187,21 @@
             <artifactId>spring-kafka</artifactId>
         </dependency>
 
+        <!-- 集成es -->
+        <!-- Java Low Level REST Client -->
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>elasticsearch-rest-client</artifactId>
+            <version>${elasticsearch.version}</version>
+        </dependency>
+
+        <!-- Java High Level REST Client -->
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>elasticsearch-rest-high-level-client</artifactId>
+            <version>${elasticsearch.version}</version>
+        </dependency>
+
         <!-- jackson -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -198,7 +214,17 @@
             <artifactId>aspectjweaver</artifactId>
             <version>${spring_aspect_version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
 
+        <dependency>
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
 
         <!--<dependency>-->
         <!--<groupId> org.apache.cassandra</groupId>-->

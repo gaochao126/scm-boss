@@ -50,6 +50,12 @@ spring:
       # 日志用的filter:log4j
       # 防御sql注入的filter:wall
       filters: stat
+
+  #=============== es ==========elastic search=======================
+  elasticsearch:
+    hostname: 127.0.0.1
+    port: 9200
+
   #=========================zookeeper=======================
   zookeeper:
     address: 127.0.0.1:2181
