@@ -49,3 +49,8 @@
     
     5.1、安装地址
         https://blog.csdn.net/weixin_41575259/article/details/82529580
+        
+    5.2、springboot整合es
+        https://www.cnblogs.com/liuqijia/p/11552795.html
+        https://www.jianshu.com/p/2ff05a83816e
+        https://blog.csdn.net/tianyaleixiaowu/article/details/76149547/
