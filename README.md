@@ -29,3 +29,9 @@
     3.2、springboot集成zookeeper
         https://blog.csdn.net/u010391342/article/details/100404588    
     
+四、kafka在windows下安装
+
+    4.1、安装地址
+        https://blog.csdn.net/weixin_38004638/article/details/91893910
+    4.2、kafka文件夹下执行命令：
+        .\bin\windows\kafka-server-start.bat .\config\server.properties
