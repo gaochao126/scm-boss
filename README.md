@@ -33,5 +33,10 @@
 
     4.1、安装地址
         https://blog.csdn.net/weixin_38004638/article/details/91893910
+   
     4.2、kafka文件夹下执行命令：
         .\bin\windows\kafka-server-start.bat .\config\server.properties
+   
+    4.3、springboot整合kafka
+        https://www.cnblogs.com/toutou/archive/2019/10/07/11354330.html   
+     
