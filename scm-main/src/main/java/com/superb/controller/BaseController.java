@@ -28,6 +28,8 @@ public class BaseController {
 
         System.out.println(userBySex.toString());
 
+        new Thread(()->{});
+
         return userBySex.toString();
     }
 
